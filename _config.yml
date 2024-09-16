@@ -1,0 +1,85 @@
+# Site settings
+title: "My Portfolio"
+description: "Showcasing my work and projects."
+url: "https://www.yourportfolio.com"
+baseurl: ""
+author:
+  name: "Your Name"
+  email: "you@example.com"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files from being processed by Jekyll
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .gitignore
+
+# Permalinks
+permalink: pretty
+
+# Navigation links
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Blog"
+    url: /blog/
+  - title: "Contact"
+    url: /contact/
+
+# Social links
+social:
+  - name: "GitHub"
+    url: "https://github.com/yourusername"
+    icon: "github"
+  - name: "Twitter"
+    url: "https://twitter.com/yourusername"
+    icon: "twitter"
+  - name: "LinkedIn"
+    url: "https://www.linkedin.com/in/yourusername"
+    icon: "linkedin"
+  - name: "Dribbble"
+    url: "https://dribbble.com/yourusername"
+    icon: "dribbble"
+
+# Google Analytics
+google_analytics:
+  tracking_id: "UA-XXXXXXXXX-X"
+
+# SEO settings
+seo:
+  title_prefix: "My Portfolio |"
+  og_image: "/assets/images/og-image.jpg"
+
+# Custom CSS and JS
+custom_css: /assets/css/custom.css
+custom_js: /assets/js/custom.js
+
+# Layout defaults
+defaults:
+  - scope:
+      path: ""
+      type: "page"
+    values:
+      layout: "default"
+  - scope:
+      path: "portfolio"
+      type: "page"
+    values:
+      layout: "portfolio"
+  - scope:
+      path: "posts"
+      type: "post"
+    values:
+      layout: "post"
